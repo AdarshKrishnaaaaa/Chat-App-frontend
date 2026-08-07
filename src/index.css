@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes:
+    light,
+    dark,
+    cupcake,
+    bumblebee,
+    emerald,
+    corporate,
+    synthwave,
+    retro,
+    cyberpunk,
+    valentine,
+    halloween,
+    garden,
+    forest,
+    aqua,
+    lofi,
+    pastel,
+    fantasy,
+    wireframe,
+    black,
+    luxury,
+    dracula,
+    cmyk,
+    autumn,
+    business,
+    acid,
+    lemonade,
+    night,
+    coffee,
+    winter,
+    dim,
+    nord,
+    sunset
+}
+
+/* Define theme colors as CSS variables */
+:root {
+  --light-bg: #ffffff;
+  --dark-bg: #0f0f0f;
+  --cupcake-bg: #d96d74;
+  --bumblebee-bg: #fdd835;
+  --emerald-bg: #2ecc71;
+  --corporate-bg: #1f3fa0;
+  --synthwave-bg: #463768;
+  --retro-bg: #f4b400;
+  --cyberpunk-bg: #ff4f80;
+  --valentine-bg: #5f0926;
+  --halloween-bg: #cc7a00;
+  --garden-bg: #4caf50;
+  --forest-bg: #388e3c;
+  --aqua-bg: #01a2b7;
+  --lofi-bg: #cddc39;
+  --pastel-bg: #f48fb1;
+  --fantasy-bg: #d32f2f;
+  --wireframe-bg: #9e9e9e;
+  --black-bg: #000000;
+  --luxury-bg: #726100;
+  --dracula-bg: #282a36;
+  --cmyk-bg: #ff69b4;
+  --autumn-bg: #ff5722;
+  --business-bg: #00bcd4;
+  --acid-bg: #00ff00;
+  --lemonade-bg: #fbc02d;
+  --night-bg: #212121;
+  --coffee-bg: #3e2723;
+  --winter-bg: #64b5f6;
+  --dim-bg: #607d8b;
+  --nord-bg: #a350c7;
+  --sunset-bg: #d74726;
+}
+
+/* Apply background color for each theme */
+[data-theme="light"]     { --bg: var(--light-bg); }
+[data-theme="dark"]      { --bg: var(--dark-bg); }
+[data-theme="cupcake"]   { --bg: var(--cupcake-bg); }
+[data-theme="bumblebee"] { --bg: var(--bumblebee-bg); }
+[data-theme="emerald"]   { --bg: var(--emerald-bg); }
+[data-theme="corporate"] { --bg: var(--corporate-bg); }
+[data-theme="synthwave"] { --bg: var(--synthwave-bg); }
+[data-theme="retro"]     { --bg: var(--retro-bg); }
+[data-theme="cyberpunk"] { --bg: var(--cyberpunk-bg); }
+[data-theme="valentine"] { --bg: var(--valentine-bg); }
+[data-theme="halloween"] { --bg: var(--halloween-bg); }
+[data-theme="garden"]    { --bg: var(--garden-bg); }
+[data-theme="forest"]    { --bg: var(--forest-bg); }
+[data-theme="aqua"]      { --bg: var(--aqua-bg); }
+[data-theme="lofi"]      { --bg: var(--lofi-bg); }
+[data-theme="pastel"]    { --bg: var(--pastel-bg); }
+[data-theme="fantasy"]   { --bg: var(--fantasy-bg); }
+[data-theme="wireframe"] { --bg: var(--wireframe-bg); }
+[data-theme="black"]     { --bg: var(--black-bg); }
+[data-theme="luxury"]    { --bg: var(--luxury-bg); }
+[data-theme="dracula"]   { --bg: var(--dracula-bg); }
+[data-theme="cmyk"]      { --bg: var(--cmyk-bg); }
+[data-theme="autumn"]    { --bg: var(--autumn-bg); }
+[data-theme="business"]  { --bg: var(--business-bg); }
+[data-theme="acid"]      { --bg: var(--acid-bg); }
+[data-theme="lemonade"]  { --bg: var(--lemonade-bg); }
+[data-theme="night"]     { --bg: var(--night-bg); }
+[data-theme="coffee"]    { --bg: var(--coffee-bg); }
+[data-theme="winter"]    { --bg: var(--winter-bg); }
+[data-theme="dim"]       { --bg: var(--dim-bg); }
+[data-theme="nord"]      { --bg: var(--nord-bg); }
+[data-theme="sunset"]    { --bg: var(--sunset-bg); }
+
+/* Apply the selected background */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  transition: background-color 0.6s ease;
+}
