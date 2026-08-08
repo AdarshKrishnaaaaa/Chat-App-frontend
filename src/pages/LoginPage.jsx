@@ -36,7 +36,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen grid lg:grid-cols-2">
+    <div className="grid lg:grid-cols-2">
       <div className="flex flex-col justify-center items-center px-4">
         <div className="p-8 rounded-2xl w-full max-w-md space-y-3">
           <div className="flex items-center justify-center space-x-2">
