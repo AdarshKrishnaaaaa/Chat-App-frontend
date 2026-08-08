@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className='h-screen fixed w-screen'>
       <div className='flex items-center justify-center pt-10 px-4'>
-        <div className='bg-base-100 rounded-lg shadow-cl w-full max-w-6xl h-[calc(100vh-10rem)]'> 
+        <div className='bg-base-100 rounded-lg shadow-cl w-full max-w-6xl h-[calc(94vh-8rem)]'> 
           <div className='flex h-full rounded-lg overflow-hidden'>
             <SideBar />
 
